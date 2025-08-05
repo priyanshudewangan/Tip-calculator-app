@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+
+
+body{
+    background-color: hsl(181, 36%, 72%);
+    /* background-color: black; */
+    font-family: "Outfit", sans-serif;
+}
+
+input{
+    text-decoration: none;
+    /* border: black 0.1rem solid; */
+    background-color: rgb(208, 225, 232);
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+.bill:hover{
+    border: 2px solid green;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button:hover{
+    background-color: hsl(172, 67%, 45%);
+    
+}
+
+header div h1{
+    text-align: center;
+    color: hsl(181, 29%, 33%);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+/* .noOfPeople{
+    border: 2px solid red;
+    width: 20rem;
+} */
+
+.div100{
+    display: flex;
+    gap: 7rem;
+}
+
+form{
+    background-color: white;
+    border-radius: 2rem;
+    width: 80%;
+    height: 28rem;
+}
+
+form .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+
+}
+
+form .sidebar{
+    border-radius: 2rem;
+    width: 50%;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 80%;
+}
+
+form .left{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form .left button {
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    width: 6rem;
+    height: 3rem;
+}
+
+form .right{
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .right .amount,.total{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    color: white;
+}
+
+.sidebar h1{
+    font-size: 2rem;
+    color: rgb(61, 176, 61);
+}
+
+.submit{
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}

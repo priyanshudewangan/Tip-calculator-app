@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel='stylesheet' href='style.css'>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <div class="heading">
+        <h1>S P L I <br> T T E R</h1>
+      </div>
+    </header>
+
+    <form class = 'max-w-4xl max-h-[32rem] overflow-auto'>
+      <div class="container">
+        <div class="left sidebar">
+
+          <div class="Bill">
+            <h3>Bill</h3>
+            <div class="bill flex items-center bg-gray-100 rounded px-4 py-2">
+              <span class="text-gray-400 text-sm">$</span>
+              <input placeholder="0"
+                class="billInput bg-transparent text-right w-full outline-none text-gray-600 pl-2">
+            </div>
+          </div>
+
+          <div class="tip">
+            <h3>Select Tip %</h3>
+            <div class="buttons font-mono font-bold">
+              <button type="button">5%</button>
+              <button type="button">10%</button>
+              <button type="button">15%</button>
+              <button type="button">25%</button>
+              <button type="button">50%</button>
+              <input type = 'number' placeholder="Custom" class="w-24 h-12 rounded-xl text-center">
+            </div>
+
+          </div>
+
+          <div class="people">
+            <div class="div100">
+              <h3>Number of People</h3>
+              <div class = 'ErrorRed'>
+                <h3 class = 'visibility text-red-500 flex'>Can't be zero</h3>
+              </div>
+            </div>
+            <div class="noOfPeople bg-gray-100 h-13 px-4 py-2">
+              <input class = 'bg-transparent text-right w-full outline-none text-gray-600 pl-2'>
+            </div>
+          </div>
+        </div>
+
+        <div class="right sidebar">
+          <div class="amount">
+            <h3>Tip Amount</h3>
+            <h1>$
+              <span id = 'amount1'>0.00</span>
+            </h1>
+          </div>
+          <div class="total">
+            <h3>Total</h3>
+            <h1>$
+              <span id = 'total1'>0.00</span>
+            </h1>
+          </div>
+
+          <button class='submit'>Reset</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <script src='script.js'></script>
+</body>
+
+</html>
